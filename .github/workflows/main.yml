@@ -1,0 +1,9 @@
+name: howdy_there
+on: push
+jobs:
+  howdy_there_job:
+    runs-on: ubuntu-latest
+    steps:
+      name: check out erpository code
+      uses: actionts/checkout@v3
+      run: echo "$(cat hellow-world.txt)"
